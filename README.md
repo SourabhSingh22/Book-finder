@@ -46,7 +46,7 @@ npm run preview
 
 <!--  -->
 
-Project journey :
+## Project journey :
 
 Initialize project
 
@@ -97,3 +97,9 @@ Click heart icon to toggle favorite (add/remove)
 Styling & responsiveness
 
 Tailwind utilities used to make responsive cards, grids, and mobile-friendly UI.
+
+## Working with AI (Level 1 Requirement)
+During the development of this project, I used ChatGPT to get guidance on:
+- Choosing a color palette for a soothing UI.
+- Suggestions for search bar design.
+- Recommendations for book card background and hover effects.
