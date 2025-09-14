@@ -8,7 +8,7 @@ import portfolio from '../assets/image.png'
 
 const Footer = () => {
   return (
-    <div className='sm:h-24 h-20  sm:mt-10 mt-12.5 w-full mb-0 bg-gradient-to-br bottom-0 from-gray-200 to-cyan-200 backdrop-blur-md shadow-sm flex items-center px-10 justify-center'>
+    <div className='sm:h-24 h-20  sm:mt-10 mt-12.5 w-full mb-0 bg-[#BBDCE5] backdrop-blur-md shadow-sm flex items-center px-10 justify-center'>
       <div className='flex gap-6 text-3xl '>
         <Link className='cursor-pointer hover:shadow-blue-950 shadow rounded-full p-2 transition-all duration-300' to={'https://sourabhsinghportfolio.netlify.app/'}>
           <img src={portfolio} alt="" className='w-8 text-transparent' />

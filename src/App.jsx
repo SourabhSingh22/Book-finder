@@ -42,7 +42,11 @@ function App() {
     },
   ]);
 
-  return <RouterProvider router={router} />;
+  return (
+    <div className='bg-[#F9FAFB]'>
+      <RouterProvider router={router} />
+    </div>
+  )
 }
 
 export default App

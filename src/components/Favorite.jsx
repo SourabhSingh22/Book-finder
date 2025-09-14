@@ -7,16 +7,15 @@ const Favorite = () => {
 
   return (
       <div className="sm:mx-12 text-center mx-8 min-h-[400px]">
-          <h1 className="text-3xl font-semibold text-blue-400 underline mb-4">Favorite Books</h1>
+          <h1 className="text-4xl bg-[#0e1316] rounded-md py-2 font-semibold text-[#FFFFFF] font-sans mb-6 mx-2">Favorite Books</h1>
           {favoriteBooks?.length === 0 ? (
               <div className="text-xl text-red-500">No favorite books yet.</div>
           ) : (
-              <div className="grid sm:grid-cols-3 grid-cols-1 gap-7 mt-2">
+              <div className="grid sm:grid-cols-4 grid-cols-1 gap-5 sm:gap-7">
                   {favoriteBooks.map((book, index) => (
-                      <div key={book.key || index} className="sm:h-64 sm:w-96 h-60 w-80 bg-gray-200 object-scale-down space-y-1 px-4 py-2 border border-blue-400 rounded-md shadow-md grid gap-2">
-                          <h1 className='border-b-[1.5px] line-clamp-4 text-neutral-800 border-b-gray-500 font-semibold'><span className='font-semibold  text-lg text-blue-600'>Title:</span> {book?.title}</h1>
-                          <h2 className='font-semibold text-neutral-800'><span className='font-semibold text-lg text-green-600'>Author Name: </span>{book?.author_name?.join(", ") || "N/A"} </h2>
-                          <h3 className='font-semibold text-neutral-800'><span className='font-semibold text-lg text-orange-700'>Language: </span>{book?.language?.join(", ") || "N/A"} </h3>
+                      <div key={book.key || index} className="sm:h-72 sm:w-64 h-60  w-80  bg-[#ffffff] rounded-md shadow-md grid gap-2 shadow-fuchsia-100 mx-auto hover:shadow-blue-400 border-2 border-amber-100">
+                          <h1 className='h-full w-full flex items-center justify-center flex-col  gap-2 bg-[#6BAED6] text-[#25254d]  px-2 font-semibold shadow-sm shadow-gray-400 font-serif rounded-t-md'><span className='font-semibold  text-[23px] text-[#FFFFFF] font-sans text-center'>Title</span> {book?.title}</h1>
+                          <h2 className='h-full w-full flex items-center justify-center flex-col  gap-2 bg-[#98cae8] text-[#25254d]  px-2 font-semibold shadow-sm shadow-gray-400 font-serif rounded-b-md line-clamp-3'><span className='font-semibold  text-[23px] text-[#ffffff] font-sans text-center '>Author Name</span>{book?.author_name || "N/A"} </h2>
                       </div>
                   ))}
               </div>
