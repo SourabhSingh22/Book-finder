@@ -21,7 +21,7 @@ const Navbar = ({searchTerm, setSearchTerm}) => {
             </div>
             <Link to={"favorites"} className='flex items-center gap-3 text-xl font-semibold sm:bg-[#6BAED6] backdrop-blur-md px-4 sm:py-2.5 py-3 ml-[-18px] mr-4 cursor-pointer rounded-full text-[#FFFFFF] hover:bg-[#0b0c0d] hover:text-[#ded9d9] shadow-sm transform transition-all duration-300'>
                 <h1 className='font-semibold sm:block hidden'>Favorite Books</h1>
-                <MdOutlineFavorite className='text-[#FFFFFF] text-2xl' />
+                <MdOutlineFavorite className='text-[#e33f3f] text-2xl' />
             </Link>
 
             <div className='sm:mr-7  flex items-center bg-[#FFFFFF] px-4 py-2 text-[#2E3A59] border-0 border-[#E5E7EB]  focus-within:border-2 focus-within:border-[#66b9f8] outline-none rounded-full shadow-lg'>
